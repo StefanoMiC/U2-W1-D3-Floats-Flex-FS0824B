@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./flex.css">
+    <title>Flexbox</title>
+
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+
+    <h2>Proprietà di contenitore (flex container)</h2>
+
+    <h3>Contenitore flex: direzione row</h3>
+    <div class="container n1">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: direzione row-reverse</h3>
+    <div class="container n2">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: direzione column</h3>
+    <div class="container n3">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: direzione column reverse</h3>
+    <div class="container n4">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: wrap</h3>
+    <div class="container n5">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: wrap + align-content</h3>
+    <div class="container n6">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+    <h3>Contenitore flex: wrap + align-content</h3>
+    <div class="container n6">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: justify-content</h3>
+    <div class="container n7">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: justify-content in column</h3>
+    <div class="container n8">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: justify-content and align-items (row)</h3>
+    <div class="container n9">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: justify-content and align-items (column)</h3>
+    <div class="container n10">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green">3</div>
+        <div class="box violet">4</div>
+    </div>
+
+    <h3>Contenitore flex: align-items: baseline</h3>
+    <div class="container n11">
+        <div class="box aqua">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="" width="100%">
+            <p>lorem ipsum</p>
+        </div>
+        <div class="box coral">
+            <img src="https://cdn.icon-icons.com/icons2/2845/PNG/512/puma_logo_icon_181343.png" alt="" width="100%">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat vero voluptates inventore, molestiae
+                suscipit alias odio unde iste sint eaque perferendis consectetur enim ea ullam nisi in dignissimos
+                accusamus eum?</p>
+        </div>
+        <div class="box green">
+            <img src="https://static.vecteezy.com/ti/vettori-gratis/t1/10994232-nike-logo-nero-abiti-design-icona-astratto-calcio-vettore-illustrazione-con-bianca-sfondo-gratuito-vettoriale.jpg"
+                alt="" width="100%">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia praesentium sed eius, rem
+                distinctio repellendus ullam totam ea obcaecati!</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Proprietà di elemento (flex item)</h2>
+
+    <h3>Contenitore flex: order</h3>
+    <div class="container n12">
+        <div class="box aqua">1</div>
+        <!-- se un singolo elemento avrà valore di order > 0 diventerà automaticamente l'ultimo della riga -->
+        <div class="box coral" style="order: 1">2</div>
+        <div class="box green">3</div>
+        <!-- order -1 porta un qualsiasi elemento in prima posizione -->
+        <div class="box violet" style="order: -1">4</div>
+        <div class="box coral">5</div>
+
+    </div>
+
+    <h3>Contenitore flex: order with media queries</h3>
+    <div class="container n13">
+        <div>&lt;&lt;</div>
+        <input type="number" placeholder="1" min="1" max="10">
+        <div>&gt;&gt;</div>
+
+    </div>
+
+    <h3>Contenitore flex: flex-grow</h3>
+    <div class="container n14">
+        <div class="box aqua">1</div>
+        <div class="box coral">2</div>
+        <div class="box green"></div>
+        <div class="box violet">4</div>
+    </div>
+
+</body>
+
+</html>

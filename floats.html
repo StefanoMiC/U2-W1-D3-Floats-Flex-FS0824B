@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin-inline: auto;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* .clearfix {
+            clear: both;
+
+        } */
+
+        header {
+            background-color: aqua;
+            padding: 1rem;
+            /* questa proprietà funziona come il clearfix */
+            display: flow-root;
+        }
+
+        header .logo {
+            font-weight: 500;
+        }
+
+        header ul {
+            padding: 0;
+            /* display: inline-block; */
+            float: right;
+            margin: 0;
+        }
+
+        header ul li {
+            display: inline-block;
+        }
+
+
+
+
+        main {
+            padding: 1rem;
+            background-color: palegoldenrod;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        .card {
+            float: left;
+            width: 33.333%;
+        }
+
+        .aqua {
+            background-color: aqua;
+        }
+
+        .coral {
+            background-color: coral;
+        }
+
+        .green {
+            background-color: palegreen;
+        }
+
+        @media screen and (max-width: 399px) {
+
+            main img {
+                display: block;
+                margin-inline: auto;
+            }
+
+            main p {
+                text-align: center;
+            }
+
+        }
+
+
+        @media screen and (min-width: 400px) {
+            main img {
+                float: left;
+                margin-right: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <span class="logo">Logo</span>
+            <ul>
+                <li>elemento</li>
+                <li>elemento</li>
+                <li>elemento</li>
+                <li>elemento</li>
+            </ul>
+
+        </header>
+        <main class="clearfix">
+            <img src="https://images.unsplash.com/photo-1729867799265-34a921d70baf?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" width="250">
+
+
+            <div style="display: inline-block; width: 100px; height: 100px; background-color: coral;"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, culpa obcaecati cupiditate corrupti,
+                reiciendis id quod commodi impedit quasi molestias exercitationem libero modi qui dolores eius cum
+                doloribus explicabo tenetur?
+                Quae cupiditate mollitia, odio ducimus provident fugit reprehenderit ex. Aliquam officiis nostrum et
+                quibusdam ratione nihil consequuntur, odit ipsum ipsa repellendus esse doloremque quia quod! Excepturi
+                animi magnam minima incidunt.
+                Omnis aspernatur numquam perspiciatis impedit distinctio eius, animi delectus voluptate, repellendus
+                sequi odit non maiores veniam. Temporibus inventore optio quidem veniam asperiores ullam repudiandae
+                assumenda voluptatem in, atque deleniti obcaecati!
+            </p>
+
+            <!-- <div class="clearfix"></div> -->
+            <!-- <p class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio et aliquam, temporibus
+                laudantium fuga
+                similique soluta veritatis perspiciatis quod eaque laborum doloribus quae, minima distinctio ratione
+                assumenda quasi voluptates dolorum?</p> -->
+        </main>
+        <main class="clearfix">
+            <img src="https://images.unsplash.com/photo-1729867799265-34a921d70baf?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" width="250">
+
+
+            <div style="display: inline-block; width: 100px; height: 100px; background-color: coral;"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, culpa obcaecati cupiditate corrupti,
+                reiciendis id quod commodi impedit quasi molestias exercitationem libero modi qui dolores eius cum
+                doloribus explicabo tenetur?
+                Quae cupiditate mollitia, odio ducimus provident fugit reprehenderit ex. Aliquam officiis nostrum et
+                quibusdam ratione nihil consequuntur, odit ipsum ipsa repellendus esse doloremque quia quod! Excepturi
+                animi magnam minima incidunt.
+                Omnis aspernatur numquam perspiciatis impedit distinctio eius, animi delectus voluptate, repellendus
+                sequi odit non maiores veniam. Temporibus inventore optio quidem veniam asperiores ullam repudiandae
+                assumenda voluptatem in, atque deleniti obcaecati!
+            </p>
+
+            <!-- <div class="clearfix"></div> -->
+            <!-- <p class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio et aliquam, temporibus
+                laudantium fuga
+                similique soluta veritatis perspiciatis quod eaque laborum doloribus quae, minima distinctio ratione
+                assumenda quasi voluptates dolorum?</p> -->
+        </main>
+        <main class="clearfix">
+            <img src="https://images.unsplash.com/photo-1729867799265-34a921d70baf?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" width="250">
+
+
+            <div style="display: inline-block; width: 100px; height: 100px; background-color: coral;"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, culpa obcaecati cupiditate corrupti,
+                reiciendis id quod commodi impedit quasi molestias exercitationem libero modi qui dolores eius cum
+                doloribus explicabo tenetur?
+                Quae cupiditate mollitia, odio ducimus provident fugit reprehenderit ex. Aliquam officiis nostrum et
+                quibusdam ratione nihil consequuntur, odit ipsum ipsa repellendus esse doloremque quia quod! Excepturi
+                animi magnam minima incidunt.
+                Omnis aspernatur numquam perspiciatis impedit distinctio eius, animi delectus voluptate, repellendus
+                sequi odit non maiores veniam. Temporibus inventore optio quidem veniam asperiores ullam repudiandae
+                assumenda voluptatem in, atque deleniti obcaecati!
+            </p>
+
+            <!-- <div class="clearfix"></div> -->
+            <!-- <p class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio et aliquam, temporibus
+                laudantium fuga
+                similique soluta veritatis perspiciatis quod eaque laborum doloribus quae, minima distinctio ratione
+                assumenda quasi voluptates dolorum?</p> -->
+        </main>
+        <footer>
+            <p>Epicode&copy;</p>
+        </footer>
+    </div>
+
+    <div class="card aqua">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis non tenetur necessitatibus quam
+        recusandae. Soluta rem eius distinctio fugit iusto facere modi numquam ea rerum, earum voluptatibus ad vel.
+    </div>
+    <div class="card coral">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis non tenetur necessitatibus quam
+        recusandae. Soluta rem eius distinctio fugit iusto facere modi numquam ea rerum, earum voluptatibus ad vel.
+    </div>
+    <div class="card green">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis non tenetur necessitatibus quam
+        recusandae. Soluta rem eius distinctio fugit iusto facere modi numquam ea rerum, earum voluptatibus ad vel.
+    </div>
+
+</body>
+
+</html>

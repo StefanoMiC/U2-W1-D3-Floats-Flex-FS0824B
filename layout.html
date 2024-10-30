@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: palegoldenrod;
+            padding-inline: 2rem;
+        }
+
+        main {
+            background-color: aquamarine;
+            height: calc(100vh - 52.9px);
+            display: flex;
+        }
+
+        /* ul {
+            display: flex;
+        } */
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .logo {
+            margin-left: 10px;
+            margin-right: auto;
+        }
+
+        header ul li {
+            display: inline-block;
+        }
+
+        aside {
+            background-color: coral;
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .main-content {
+            background-color: palevioletred;
+            flex-grow: 1;
+        }
+
+        aside button {
+            width: 100%;
+            background-color: black;
+            color: white;
+            border: none;
+            padding-block: 0.75rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-image"></div>
+        <span class="logo">Logo</span>
+        <ul>
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+        </ul>
+
+    </header>
+    <main>
+        <aside>
+
+
+            <ul>
+                <li>elemento</li>
+                <li>elemento</li>
+                <li>elemento</li>
+                <li>elemento</li>
+            </ul>
+
+            <button>Sign in</button>
+        </aside>
+
+        <div class="main-content">
+            Main content
+        </div>
+
+    </main>
+
+</body>
+
+</html>

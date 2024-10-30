@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  margin-top: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin-inline: auto;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  min-height: 30vh;
+  display: flex;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.green {
+  background-color: palegreen;
+}
+
+.violet {
+  background-color: palevioletred;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.n2 {
+  flex-direction: row-reverse;
+}
+
+.n3 {
+  flex-direction: column;
+  min-height: 50vh;
+}
+
+.n4 {
+  flex-direction: column-reverse;
+  min-height: 50vh;
+}
+
+.n5 {
+  min-height: 50vh;
+  flex-wrap: wrap;
+}
+
+.n6 {
+  min-height: 50vh;
+  flex-wrap: wrap;
+  /* align-content funziona SOLO su contenitori che hanno un wrap */
+  align-content: center;
+}
+
+.n7 {
+  justify-content: flex-end;
+}
+
+.n8 {
+  flex-direction: column;
+  /* a questo punto la main-axis è cambiata ed è l'asse verticale */
+  justify-content: space-between;
+  min-height: 70vh;
+}
+
+.n9 {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.n10 {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.n11 {
+  justify-content: center;
+  align-items: baseline;
+  padding-block: 7rem;
+}
+
+.n11 img {
+  display: block;
+}
+
+.n11 .box {
+  height: unset;
+  padding-block: unset;
+}
+
+.n12 {
+  justify-content: center;
+  align-items: center;
+}
+
+.n13 {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 10px;
+  column-gap: 20px;
+  padding-inline: 2rem;
+}
+
+.n13 input {
+  min-height: 30px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  order: -1;
+  width: 100%;
+}
+
+.n13 > div {
+  background-color: black;
+  color: white;
+  padding: 0.25rem 1.5rem;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 500px) {
+  .n13 {
+    flex-wrap: nowrap;
+  }
+  .n13 input {
+    order: unset;
+    width: 300px;
+  }
+  .n13 > div {
+    width: 150px;
+  }
+}
+.n14 .box {
+  flex-grow: 1;
+  height: unset;
+}
+
+.n14 .box:nth-of-type(3) {
+  flex-grow: 10;
+  width: 240px;
+  flex-shrink: 10;
+  background-image: url(https://plus.unsplash.com/premium_photo-1730143954873-a3bd43370770?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
